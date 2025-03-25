@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+
+
+nav {
+    background-color: #0C9F9F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1500px;
+}
+
+li {
+    padding-left
+    list-style: none;
+    text-decoration: none;
+    color: white
+
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
