@@ -6,7 +6,7 @@ body { /* Width is determined. */
 nav {
     display: flex;
     align-items: center;
-    background-color: #068484;
+    background-color: #067F7F;
     justify-content: center;
     width: 1500px;
     text-decoration: none; /* Stop link from being blue automatically*/
