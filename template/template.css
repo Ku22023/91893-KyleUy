@@ -1,7 +1,6 @@
-body {
+body { /* Width is determined. */
     width: 1500px;
     margin: 0 auto;
-    width: 1500px;
 }
 
 nav {
@@ -10,7 +9,7 @@ nav {
     background-color: #068484;
     justify-content: center;
     width: 1500px;
-    text-decoration: none;
+    text-decoration: none; /* Stop link from being blue automatically*/
     height: 100px;
 }
 
@@ -50,7 +49,7 @@ nav a {
 }
 
 
-.dropdown-content {
+.dropdown-content { /* To hide the dropdown menu*/
     display: none;
     position: absolute;
     background-color: white;
@@ -67,7 +66,7 @@ nav a {
 
   }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover { /* To show the dropdown menu when the user is hovering over it*/
     background-color: rgb(168, 178, 180);
 }
 
