@@ -153,6 +153,28 @@ nav a {
     justify-content: center;
 }
 
+#ncea-main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 230px;
+    height: 385px;
+    background-image: url(/images/ncea-small.jpg);
+    margin-left: 80px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#ncea-main-button-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 
 #footer {
