@@ -153,6 +153,10 @@ nav a {
     justify-content: center;
 }
 
+#ncea-selection {
+    display: flex;
+}
+
 #ncea-main-button {
     display: flex;
     justify-content: center;
@@ -173,6 +177,35 @@ nav a {
 #ncea-main-button-text {
     font-weight: bold;
     font-size: 20px;
+}
+
+#ncea-level-buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ncea-level-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin-left: 20px;
+    width: 375px;
+    height: 100px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#ncea-level-1 {
+    background-image: url(/images/level-1-bg.jpg);
+}
+
+#ncea-level-2 {
+    background-image: url(/images/level-2-bg.png);
 }
 
 
