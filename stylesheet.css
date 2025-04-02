@@ -153,6 +153,12 @@ nav a {
     justify-content: center;
 }
 
+#selection-below-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+
 #ncea-selection {
     display: flex;
 }
@@ -218,6 +224,22 @@ nav a {
 #ncea-level-3 {
     background-image: url(/images/level-3-bg.jpg);
 }
+
+#blurb-title {
+    font-size: 30px;
+}
+
+#programming-blurbs {
+    width: 600px;
+    font-size: 20px;
+    margin-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outside-link {
+    color: #0588A8;
+}
+
 
 
 #footer {
