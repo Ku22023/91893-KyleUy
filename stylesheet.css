@@ -172,6 +172,9 @@ nav a {
     color: black;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-width: 10x;
+    border-radius: 30px;
 }
 
 #ncea-main-button-text {
@@ -198,16 +201,23 @@ nav a {
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    border-style: solid;
+    border-width: 10x;
+    border-radius: 30px;
 }
 
 #ncea-level-1 {
+
     background-image: url(/images/level-1-bg.jpg);
 }
 
 #ncea-level-2 {
-    background-image: url(/images/level-2-bg.png);
+    background-image: url(/images/level-2-bg.jpg);
 }
 
+#ncea-level-3 {
+    background-image: url(/images/level-3-bg.jpg);
+}
 
 
 #footer {
