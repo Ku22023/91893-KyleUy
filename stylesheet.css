@@ -3,6 +3,10 @@ body { /* Width is determined. */
     margin: 0 auto;
 }
 
+main {
+    background-color: #f8efef;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -17,7 +21,7 @@ nav {
 
 #aboutus {
     width: 300px;
-    margin-left: 500px;
+    margin-left: 470px;
     font-size: 30px;
     text-decoration: none;
 }
