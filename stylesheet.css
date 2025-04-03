@@ -155,11 +155,17 @@ nav a {
 #select-language {
     display: flex;
     justify-content: center;
+    font-weight: bold;
+}
+
+main {
+    background-image: url(/images/below-buttons.jpg);    ;
 }
 
 #selection-below-buttons {
     display: flex;
     justify-content: center;
+
 }
 
 
@@ -252,6 +258,7 @@ nav a {
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    padding-top: 10px;
 }
 
 #footer-navigation {
