@@ -362,15 +362,37 @@ nav a {
 
 
 
-
-
-#ncea-hero-image {
-    width: 936px;
-    height: 351px;
-    background-image: url(/images/ncea-bg-reversed.png);
+#ncea-hero-combined {
+    display: flex;
 }
 
+#ncea-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    width: 935px;
+    height: 330px;
+    background-image: url(/images/ncea-bg-reversed.png);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+}
 
+#ncea-hero-blurb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    width: 575px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ccdd3;
+    margin: 0px;
+
+}
 
 
 
