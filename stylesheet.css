@@ -9,7 +9,7 @@ body { /* Width is determined. */
 nav {
     display: flex;
     align-items: center;
-    background-color: #067F7F;
+    background-color: #118282;
     justify-content: center;
     width: 1500px;
     text-decoration: none; /* Stop link from being blue automatically*/
@@ -123,7 +123,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 20px;
-    background-color: #008080;
+    background-color: #118282;
     width: 222px;
     height: 54px;
     border-radius: 20px;
@@ -151,7 +151,7 @@ nav a {
     margin-left: 30px;
     width: 320px;
     height: 100px;
-    background-color: #1A969C;
+    background-color: #118282;
     border-radius: 30px;
     text-decoration: none;
     transition: 1s;
@@ -286,7 +286,7 @@ nav a {
 }
 
 #documentation-sidebar-background {
-    background-color: #008080;
+    background-color: #118282;
 }
 
 #documentation-sidebar {
@@ -354,7 +354,7 @@ nav a {
 }
 
 #footer {
-    background-color: #0C9F9F;
+    background-color: #118282;
     justify-content: center;
     display: flex;
     flex-direction: column;
