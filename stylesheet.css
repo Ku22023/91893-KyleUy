@@ -281,6 +281,13 @@ nav a {
 
 
 
+
+
+
+
+
+
+
 #documentation-template {
     display: flex;
 }
@@ -297,7 +304,7 @@ nav a {
     width: 250px;
 }
 
-.documentation-placeholder {
+.documentation-sidebar-element {
     display: flex;
     padding-left: 20px;
     text-decoration: none;
@@ -310,7 +317,7 @@ nav a {
     align-items: center;
 }
 
-.documentation-placeholder:hover {
+.documentation-sidebar-element:hover {
     background-color: #09a5ba;
 }
 
@@ -325,7 +332,7 @@ nav a {
     margin-bottom: 3px;
 }
 
-.section-title {
+.documentation-section-title {
     font-size: 40px;
     font-weight: bold;
 }
@@ -335,11 +342,11 @@ nav a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.section-description {
+.documentation-description {
     margin-top: 5px;
 }
 
-.section-code-example {
+.documentation-code-example {
     padding-left: 15px;
     margin-left: 20px;
     background-color: black;
@@ -352,6 +359,20 @@ nav a {
     border-color: #cbe0e9;
     border-radius: 20px;
 }
+
+
+
+
+
+#ncea-hero-image {
+    width: 936px;
+    height: 351px;
+    background-image: url(/images/ncea-bg-reversed.png);
+}
+
+
+
+
 
 #footer {
     background-color: #118282;
