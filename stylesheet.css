@@ -362,6 +362,14 @@ nav a {
 
 
 
+
+
+
+
+
+
+
+
 #ncea-hero-combined {
     display: flex;
 }
@@ -423,6 +431,36 @@ nav a {
     transform: scale(1.1);
     transition: 2s;
 }
+
+#ncea-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ncea-page-level-title {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.ncea-page-title-credits {
+    display: flex;
+    flex-direction: row;
+}
+
+.ncea-page-level-total-credits {
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #footer {
     background-color: #118282;
