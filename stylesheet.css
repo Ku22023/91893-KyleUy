@@ -444,6 +444,7 @@ nav a {
 .ncea-page-title-credits {
     display: flex;
     flex-direction: row;
+    height: 100px;
 }
 
 .ncea-page-level-total-credits {
@@ -452,15 +453,19 @@ nav a {
     font-size: 20px;
 }
 
+.standards-infos {
+    margin-top: 0px;
+    margin-left: 25px;
+    font-size: 20px;
+}
 
+.ncea-page-more-info {
+    margin-left: 50px;
+}
 
-
-
-
-
-
-
-
+.ncea-page-more-info li {
+    margin-left: 20px;
+}
 
 
 #footer {
