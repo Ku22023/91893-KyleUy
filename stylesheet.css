@@ -19,7 +19,7 @@ nav {
 
 #aboutus {
     width: 300px;
-    margin-left: 470px;
+    margin-left: 430px;
     font-size: 30px;
     text-decoration: none;
 }
@@ -466,6 +466,28 @@ nav a {
 .ncea-page-more-info li {
     margin-left: 20px;
 }
+
+
+#about-us-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about-us-gallery a{
+    color: black;
+    text-decoration: none;
+}
+
+#about-us-gallery a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
 
 
 #footer {
