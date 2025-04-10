@@ -94,6 +94,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     font-size: 50px;  
@@ -101,7 +102,14 @@ nav a {
     width: 750px;
 }
 
+#hero-learn-to-use {
+    font-weight: BOLD;
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
 #hero-html {
+    margin-top: 0px;
     padding-left: 400px;
     color: #1C9CA2;
 }
@@ -224,6 +232,11 @@ nav a {
 #ncea-main-button-text {
     font-weight: bold;
     font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#ncea-main-button-learn-more {
+    margin-top: 0px;
 }
 
 #ncea-level-buttons-container {
