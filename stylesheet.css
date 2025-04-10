@@ -346,11 +346,12 @@ nav a {
 }
 
 .documentation-language {
-    margin-left: 15px;
+    margin-left: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .documentation-description {
+    margin-left: 20px;
     margin-top: 5px;
 }
 
@@ -484,6 +485,7 @@ nav a {
 
 #about-us-page {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 450px;
 }
 
 #about-us-gallery a{
