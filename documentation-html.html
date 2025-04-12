@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="LeCodio HTML Documentation Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, SQL, Python, web development, coding tutorials, LeCodio">
+    <title>LeCodio - HTML Documentation</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+<header>
+    <nav id="nav1">
+        <a href="index.html" id="logo"><img src="/images/LeCodio_Logo.jpg" alt="Website Logo. The word 'Lecodio' Half surrounded by a box."></a>
+        <div id="nav-languages-buttons"> <!--To make sure that they are an equal distance apart-->
+            <div class="dropdown"> <!--To ensure that the dropdown options are hidden unless hovered-->
+                <a href="/documentation/html" class="language">HTML</a> <!--Main Language name-->
+                <div class="dropdown-content"> <!--To detect when an item is being hovered-->
+                    <a href="/documentation/html/intro">What is HTML?</a>
+                    <a href="">Headers</a>
+                    <a href="">H1, H2, H3, H4</a>
+                    <a href="">p tags</a>
+                    <a href="">Divs</a>
+                    <a href="">Lists</a>
+                    <a href="">Formatting</a>
+                    <a href="">Styles</a>
+                    <a href="">Link to CSS</a>
+                </div>
+            </div>
+            <div class="dropdown"> <!--To make sure that they are an equal distance apart-->
+                <a href="" class="language">CSS</a> <!--To ensure that the dropdown options are hidden unless hovered-->
+                <div class="dropdown-content"> <!--To detect when an item is being hovered-->
+                    <a href="">What is CSS?</a>
+                    <a href="">Class vs ID</a>
+                    <a href="">Box Model</a>
+                    <a href="">Margin</a>
+                    <a href="">Padding</a>
+                    <a href="">Border</a>
+                    <a href="">Content</a>
+                    <a href="">Background</a>
+                    <a href="">Flex Box</a>
+                </div>
+            </div>
+            <div class="dropdown"> <!--To make sure that they are an equal distance apart-->
+                <a href="" class="language">SQL</a> <!--To ensure that the dropdown options are hidden unless hovered-->
+                <div class="dropdown-content"> <!--To detect when an item is being hovered-->
+                    <a href="">What is SQL?</a>
+                    <a href="">SELECT</a>
+                    <a href="">CREATE</a>
+                    <a href="">DELETE</a>
+                    <a href="">INSERT</a>
+                    <a href="">SORT</a>
+                    <a href="">Keys</a>
+                </div>
+            </div>
+            <div class="dropdown"> <!--To make sure that they are an equal distance apart-->
+                <a href="" class="language">Python</a> <!--To ensure that the dropdown options are hidden unless hovered-->
+                <div class="dropdown-content"> <!--To detect when an item is being hovered-->
+                    <a href="">What is Python?</a>
+                    <a href="">Print</a>
+                    <a href="">Input</a>
+                    <a href="">Variables</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="" class="language">NCEA</a>
+                <div class="dropdown-content">
+                    <a href="">Ncea Overview</a>
+                    <a href="">Level 1</a>
+                    <a href="">Level 2</a>
+                    <a href="">Level 3</a>
+                </div>
+            </div>
+        </div>
+        <a href="about-us.html" id="aboutus">About Us</a>
+    </nav>
+</header>
+
+<main id="documentation-template">
+        <div id="documentation-sidebar-background"> <!--This is so that it's sticky but also shows the blue background-->
+            <aside id="documentation-sidebar">
+                <a href="#documentation-language-info" class="documentation-title documentation-sidebar-element">HTML</a>
+                <a href="#what-is-html" class="documentation-sidebar-element">What is HTML?</a>
+                <a href="#html-basic-structure" class="documentation-sidebar-element">Basic Structure</a>
+                <a href="#html-headings" class="documentation-sidebar-element">Headings</a>
+                <a href="#html-paragraphs" class="documentation-sidebar-element">Paragraphs</a>
+                <a href="#html-links" class="documentation-sidebar-element">Links</a>
+                <a href="#html-images" class="documentation-sidebar-element">Images</a>
+                <a href="#html-lists" class="documentation-sidebar-element">Lists</a>
+                <a href="#html-divs" class="documentation-sidebar-element">Divs</a>
+                <a href="#html-semantic-tags" class="documentation-sidebar-element">Semantic Tags</a>
+                <a href="#html-meta-data" class="documentation-sidebar-element">Metadata</a>
+            </aside>
+        </div>
+
+    <section id="documentation-language-info"> <!--The info on the thingy-->
+        <h2 class="documentation-language">HTML Examples and Explained</h2>
+        <article class="documentation-language" id="what-is-html">
+            <div class="documentation-section-title"><h4>What is HTML?</h4></div>
+            <div class="documentation-description">HTML is the basic language for creating web pages. 
+                It uses simple tags to structure text, images, and links, telling web browsers how 
+                to display content. It stands for Hyper-text-markup-language
+            </div>
+        </article>
+
+        <article class="documentation-language" id="html-basic-structure">
+            <div class="documentation-section-title"><h4>Basic Structure:</h4></div>
+            <p class="documentation-description">
+                Basic Structure: Think of this as the skeleton of your webpage. You've got the &lt;html&gt; tag as the root, then the &lt;head&gt; for behind-the-scenes info like the title, and the &lt;body&gt; where all the visible content goes.</p>
+            <div class="documentation-code-example">
+                    <p class="documentation-tag">&lt;html&gt;</p>
+                    <div class="documentation-left1">
+                        <p class="documentation-tag">&lt;head&gt;</p>
+                        <p class="documentation-comment">#behind-the-scenes items</p>
+                        <p class="documentation-tag">&lt;/head&gt;</p>
+                        <br>
+                        <p class="documentation-tag">&lt;body&gt;</p>
+                        <p class="documentation-comment">#What you would see on the page</p>
+                        <p class="documentation-tag"> &lt;/body&gt;</p>
+                    </div>
+                    <p class="documentation-tag">&lt;/html&gt;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="html-headings">
+            <div class="documentation-section-title"><h4>Headings:</h4></div>
+            <p class="documentation-description">
+                Headings: These are like titles and subtitles for your content. You use &lt;h1&gt; for the main heading, &lt;h2&gt; for the next level down, and so on, all the way to &lt;h6&gt;.
+                    <div class="documentation-code-example">
+                        <p class="documentation-tag">&lt;h1&gt;</p><p class="documentation-text" id="documentation-example-h1">I am the Main Header</p> <p class="documentation-tag">&lt;/h1&gt;</p>
+                        <br>
+                        <p class="documentation-tag">&lt;h2&gt;</p><h2 class="documentation-text">I would be slightly smaller</h2> <p class="documentation-tag">&lt;/h2&gt;</p>
+                        <br>
+                        <p class="documentation-tag">&lt;h3&gt;</p><h3 class="documentation-text">I would be smaller</h3> <p class="documentation-tag">&lt;/h3&gt;</p>
+                        <br>
+                        <p class="documentation-tag">&lt;h4&gt;</p><h4 class="documentation-text">I would be smaller</h4> <p class="documentation-tag">&lt;/h4&gt;</p>
+                        <br>
+                        <p class="documentation-tag">&lt;h5&gt;</p><h5 class="documentation-text">I would be smaller</h5> <p class="documentation-tag">&lt;/h5&gt;</p>
+                        <br>
+                        <p class="documentation-tag">&lt;h6&gt;</p><h6 class="documentation-text">I would be smaller</h6> <p class="documentation-tag">&lt;/h6&gt;</p>
+                    </div>
+        </article>
+
+        <article class="documentation-language" id="html-paragraphs">
+            <div class="documentation-section-title"><h4>Paragraph Tags:</h4></div>
+            <p class="documentation-description">Paragraphs: For regular blocks of text, you wrap them in &lt;p&gt; tags.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">&lt;p&gt;</p><p class="documentation-text">I am a paragraph</p><p class="documentation-tag">&lt;p&gt;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="html-links">
+            <div class="documentation-section-title"><h4>Links:</h4></div>
+            <p class="documentation-description">Links: Want to connect to other pages or websites? The &lt;a&gt; tag is your friend. You use the href attribute to specify the destination.
+            </p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">&lt;a href="google.com"&gt;</p><a href="https://www.google.com/" target="_blank" class="documentation-text">Click me to open a link!</a><p class="documentation-tag">&lt;a&gt;</p>
+                <p class="documentation-comment">#Replace google.com with the URL of what you would like to link to.</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="html-images">
+            <div class="documentation-section-title"><h4>Images:</h4></div>
+            <p class="documentation-description">Images: To show pictures, you use the &lt;img&gt; tag. The src attribute tells the browser where to find the image file.
+            </p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">&lt;img src="image.png"&gt;&lt;img&gt;</p>
+                <p class="documentation-comment">#Replace image.png with the filename of the image.</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="html-lists">
+            <div class="documentation-section-title"><h4>Lists:</h4></div>
+            <p class="documentation-description">Lists: Need to present items in a structured way? You've got two main types:<br>
+                <ul>
+                    <li class="documentation-description">Unordered lists (&lt;ul&gt;) with bullet points (&lt;li&gt; for each item).<br></li>
+                    <li class="documentation-description">Ordered lists (&lt;ol&gt;) with numbers (&lt;li&gt; for each item).</li>
+                </ul>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">#Unordered List</p>
+                <p class="documentation-tag">&lt;ul&gt;</p>
+                <br>
+                <div class="documentation-left1">
+                    <p class="documentation-tag">&lt;li&gt;</p><p class="documentation-text">Red</p><p class="documentation-tag">&lt;/li&gt;</p>
+                    <br>
+                    <p class="documentation-tag">&lt;li&gt;</p><p class="documentation-text">Orange</p><p class="documentation-tag">&lt;/li&gt;</p>
+                    <br>
+                    <p class="documentation-tag">&lt;li&gt;</p><p class="documentation-text">Yellow</p><p class="documentation-tag">&lt;/li&gt;</p>
+                </div>
+                <p class="documentation-tag">&lt;/ul&gt;</p>
+                <p class="documentation-comment">#Ordered List</p>
+                <p class="documentation-tag">&lt;ol&gt;</p>
+                <br>
+                <div class="documentation-left1">
+                    <p class="documentation-tag">&lt;li&gt;</p><p class="documentation-text">Apple</p><p class="documentation-tag">&lt;/li&gt;</p>
+                    <br>
+                    <p class="documentation-tag">&lt;li&gt;</p><p class="documentation-text">Orange</p><p class="documentation-tag">&lt;/li&gt;</p>
+                    <br>
+                    <p class="documentation-tag">&lt;li&gt;</p><p class="documentation-text">Banana</p><p class="documentation-tag">&lt;/li&gt;</p>
+                </div>
+                <p class="documentation-tag">&lt;/ol&gt;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="html-divs">
+            <div class="documentation-section-title"><h4>Divs:</h4></div>
+            <p class="documentation-description">Divs: Think of a &lt;div&gt; as a container or a section on your webpage. It's like drawing an invisible box around a group of things (text, images, other elements) to organize them.
+                &lt;div&gt; elements are block-level, which means they automatically take up the full width available and start on a new line. 
+            </p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">&lt;div&gt;</p>
+                <p class="documentation-comment documentation-left1" >#content inside of the Div.</p>
+                <p class="documentation-tag">&lt;/div&gt;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="html-semantic-tags">
+            <div class="documentation-section-title"><h4>Semantic Tags:</h4></div>
+            <p class="documentation-description"> Semantic Elements: These tags give more meaning to the structure of your content, making it clearer for both browsers and developers.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">&lt;nav&gt;</p><p class="documentation-comment-inline" >#Includes a list of links where you can navigate the website.</p><p class="documentation-tag">&lt;/nav&gt;</p>
+                <br><br>
+                <p class="documentation-tag">&lt;header&gt;</p><p class="documentation-comment-inline" >#Includes the nav bar and the main title of the page.</p><p class="documentation-tag">&lt;/nav&gt;</p>
+                <br><br>
+                <p class="documentation-tag">&lt;main&gt;</p><p class="documentation-comment-inline">#Includes the majority of the body</p><p class="documentation-tag">&lt;/nav&gt;</p>
+                <br><br>
+                <p class="documentation-tag">&lt;footer&gt;</p><p class="documentation-comment-inline" >#Found at the bottom of the page, giving details such as copyright info, contact info, etc.</p><p class="documentation-tag">&lt;/nav&gt;</p>
+                <br><br>
+                <p class="documentation-tag">&lt;article&gt;</p><p class="documentation-comment-inline" >#Used to split Sections into further parts.</p><p class="documentation-tag">&lt;/nav&gt;</p>
+                <br><br>
+                <p class="documentation-tag">&lt;section&gt;</p><p class="documentation-comment-inline" >#Used to split up the main into parts.</p><p class="documentation-tag">&lt;/nav&gt;</p>
+                <br><br>
+                <p class="documentation-tag">&lt;aside&gt;</p><p class="documentation-comment-inline" >#Used to show content which is not part of the main content.</p><p class="documentation-tag">&lt;/nav&gt;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="html-meta-data">
+            <div class="documentation-section-title"><h4>Metadata:</h4></div>
+            <p class="documentation-description">Metadata: This is information about your HTML document that isn't displayed on the page itself. It lives within the &lt;head&gt; section. Key examples include:
+            </p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">&lt;title&gt;</p><p class="documentation-comment-inline" >#The title that appears in the browser</p><p class="documentation-tag">&lt;/title&gt;</p>
+                <br><br>
+                <p class="documentation-tag">&lt;meta&gt;</p><p class="documentation-comment-inline" >#Can define things such as: Description, Keywords, and Charset of a page.</p><p class="documentation-tag">&lt;/meta&gt;</p>                
+                
+            </div>
+        </article>
+        <br><br>
+    </section>
+</main>
+
+
+<footer id="footer">
+    <div id="footer-navigation"> <!--To allow all of the items to be moved at once-->
+        <a href="index.html" class="footer-nav-link">Home Page</a>
+        <a href="/documentation/html.html" class="footer-nav-link">HTML Page</a>
+        <a href="/documentation/css.html" class="footer-nav-link">CSS Page</a>
+        <a href="/documentation/sql.html" class="footer-nav-link">SQL Page</a>
+        <a href="/documentation/python.html" class="footer-nav-link">Python Page</a>
+        <a href="ncea.html" class="footer-nav-link">NCEA Page</a>
+        <a href="about-us.html" class="footer-nav-link">About Us</a>
+    </div>
+    <div id="footer-email">
+        <p id="email">Email: ku22023@my.westlake.school.nz</p>
+    </div>
+    <div id="footer-copyright">
+        <p>Copyright ©2025.</p>
+    </div>
+
+</footer>
+
+</body>
+
+</html>
