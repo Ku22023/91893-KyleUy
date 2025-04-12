@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="LeCodio Documentation Template Page">
+    <meta name="description" content="LeCodio CSS Documentation Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, SQL, Python, web development, coding tutorials, LeCodio">
-    <title>LeCodio - Homepage</title>
+    <title>LeCodio - CSS Documentation</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
@@ -14,11 +14,7 @@
 <header>
     <nav id="nav1">
         <a href="index.html" id="logo"><img src="/images/LeCodio_Logo.jpg" alt="Website Logo. The word 'Lecodio' Half surrounded by a box."></a>
-        <div id="nav-languages-buttons"> <!--To make sure that they are an equal distance apart-->
-            <div class="dropdown"> <!--To ensure that the dropdown options are hidden unless hovered-->
-                <a href="/documentation/html" class="language">HTML</a> <!--Main Language name-->
-                <div class="dropdown-content"> <!--To detect when an item is being hovered-->
-                    <a href="/documentation/html/intro">What is HTML?</a>
+        <div id="nav-languages-buttons"> <div class="dropdown"> <a href="/documentation/html" class="language">HTML</a> <div class="dropdown-content"> <a href="/documentation/html/intro">What is HTML?</a>
                     <a href="">Headers</a>
                     <a href="">H1, H2, H3, H4</a>
                     <a href="">p tags</a>
@@ -29,10 +25,8 @@
                     <a href="">Link to CSS</a>
                 </div>
             </div>
-            <div class="dropdown"> <!--To make sure that they are an equal distance apart-->
-                <a href="" class="language">CSS</a> <!--To ensure that the dropdown options are hidden unless hovered-->
-                <div class="dropdown-content"> <!--To detect when an item is being hovered-->
-                    <a href="">What is CSS?</a>
+            <div class="dropdown"> <a href="/documentation/css" class="language">CSS</a> <div class="dropdown-content"> <a href="/documentation/css/intro">What is CSS?</a>
+                    <a href="">Selectors</a>
                     <a href="">Class vs ID</a>
                     <a href="">Box Model</a>
                     <a href="">Margin</a>
@@ -43,10 +37,7 @@
                     <a href="">Flex Box</a>
                 </div>
             </div>
-            <div class="dropdown"> <!--To make sure that they are an equal distance apart-->
-                <a href="" class="language">SQL</a> <!--To ensure that the dropdown options are hidden unless hovered-->
-                <div class="dropdown-content"> <!--To detect when an item is being hovered-->
-                    <a href="">What is SQL?</a>
+            <div class="dropdown"> <a href="" class="language">SQL</a> <div class="dropdown-content"> <a href="">What is SQL?</a>
                     <a href="">SELECT</a>
                     <a href="">CREATE</a>
                     <a href="">DELETE</a>
@@ -55,10 +46,7 @@
                     <a href="">Keys</a>
                 </div>
             </div>
-            <div class="dropdown"> <!--To make sure that they are an equal distance apart-->
-                <a href="" class="language">Python</a> <!--To ensure that the dropdown options are hidden unless hovered-->
-                <div class="dropdown-content"> <!--To detect when an item is being hovered-->
-                    <a href="">What is Python?</a>
+            <div class="dropdown"> <a href="" class="language">Python</a> <div class="dropdown-content"> <a href="">What is Python?</a>
                     <a href="">Print</a>
                     <a href="">Input</a>
                     <a href="">Variables</a>
@@ -79,82 +67,179 @@
 </header>
 
 <main id="documentation-template">
-        <div id="documentation-sidebar-background"> <!--This is so that it's sticky but also shows the blue background-->
-            <aside id="documentation-sidebar">
-                <a href="#documentation-language-info" class="documentation-title">CSS Examples and Explained</p>
-                <a href="#section-1" class="documentation-sidebar-element">Section 1</a>
-                <a href="#section-2" class="documentation-sidebar-element">Section 2</a>
-                <a href="#section-3" class="documentation-sidebar-element">Section 3</a>
-                <a href="#section-4" class="documentation-sidebar-element">Section 4</a>
-                <a href="#section-5" class="documentation-sidebar-element">Section 5</a>
-                <a href="#section-6" class="documentation-sidebar-element">Section 6</a>
+        <div id="documentation-sidebar-background"> <aside id="documentation-sidebar">
+                <a href="#documentation-language-info" class="documentation-title documentation-sidebar-element">CSS</a>
+                <a href="#what-is-css" class="documentation-sidebar-element">What is CSS?</a>
+                <a href="#css-selectors" class="documentation-sidebar-element">Selectors</a>
+                <a href="#css-class-vs-id" class="documentation-sidebar-element">Class vs ID</a>
+                <a href="#css-box-model" class="documentation-sidebar-element">Box Model</a>
+                <a href="#css-margin" class="documentation-sidebar-element">Margin</a>
+                <a href="#css-padding" class="documentation-sidebar-element">Padding</a>
+                <a href="#css-border" class="documentation-sidebar-element">Border</a>
+                <a href="#css-content" class="documentation-sidebar-element">Content</a>
+                <a href="#css-background" class="documentation-sidebar-element">Background</a>
+                <a href="#css-flexbox" class="documentation-sidebar-element">Flexbox</a>
             </aside>
         </div>
 
-    <section id="documentation-language-info"> <!--The info on the thingy-->
-        <h2 class="documentation-language">Documentation of Languge Name</h2>
-        <article class="documentation-language" id="section-1">
-            <h2 class="documentation-section-title">Section 1:</h2>
-            <div class="documentation-description">
-                <p> is a section
-                i would have like a mini paragraph and stuff</p>
+    <section id="documentation-language-info"> <h2 class="documentation-language">CSS Examples and Explained</h2>
+        <article class="documentation-language" id="what-is-css">
+            <div class="documentation-section-title"><h4>What is CSS?</h4></div>
+            <div class="documentation-description">CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
             </div>
-            <div class="documentation-code-example"> <!--Gives a black background with the cool code font-->
-                Hi! im a code example </div>
-        </article>
-        <article class="documentation-language" id="section-2">
-            <h2 class="documentation-section-title">Section 2:</h2>
-            <div class="documentation-description">
-                <p> is a section
-                i would have like a mini paragraph and stuff</p>
-            </div>
-            <div class="documentation-code-example"> <!--Gives a black background with the cool code font-->
-                Hi! im a code example </div>
-        </article>
-        <article class="documentation-language" id="section-3">
-            <h2 class="documentation-section-title">Section 3:</h2>
-            <div class="documentation-description">
-                <p> is a section
-                i would have like a mini paragraph and stuff</p>
-            </div>
-            <div class="documentation-code-example"> <!--Gives a black background with the cool code font-->
-                Hi! im a code example </div>
-        </article>
-        <article class="documentation-language" id="section-4">
-            <h2 class="documentation-section-title">Section 4:</h2>
-            <div class="documentation-description">
-                <p> is a section
-                i would have like a mini paragraph and stuff</p>
-            </div>
-            <div class="documentation-code-example"> <!--Gives a black background with the cool code font-->
-                Hi! im a code example </div>
-        </article>
-        <article class="documentation-language" id="section-5">
-            <h2 class="documentation-section-title">Section 5:</h2>
-            <div class="documentation-description">
-                <p> is a section
-                i would have like a mini paragraph and stuff</p>
-            </div>
-            <div class="documentation-code-example"> <!--Gives a black background with the cool code font-->
-                Hi! im a code example </div>
-        </article>
-        <article class="documentation-language" id="section-6">
-            <h2 class="documentation-section-title">Section 6:</h2>
-            <div class="documentation-description">
-                <p> is a section
-                i would have like a mini paragraph and stuff</p>
-            </div>
-            <div class="documentation-code-example"> <!--Gives a black background with the cool code font-->
-                Hi! im a code example </div>
         </article>
 
-        <br>
+        <article class="documentation-language" id="css-selectors">
+            <div class="documentation-section-title"><h4>Selectors:</h4></div>
+            <p class="documentation-description">Selectors are patterns used to select the HTML elements you want to style.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">#Element Selector</p>
+                <p class="documentation-tag">p {</p>
+                    <br>
+                <p class="documentation-text documentation-left1">color: blue;</p>
+                    <br>
+                <p class="documentation-tag">}</p>
+                <br><br>
+                <p class="documentation-comment">#Class Selector</p>
+                <p class="documentation-tag">.my-class {</p><br>
+                <p class="documentation-text documentation-left1">background-color: yellow;</p><br>
+                <p class="documentation-tag">}</p>
+                <br><br>
+                <p class="documentation-comment">#ID Selector</p>
+                <p class="documentation-tag">#my-id {</p><br>
+                <p class="documentation-text documentation-left1">font-size: 20px;</p><br>
+                <p class="documentation-tag">}</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="css-class-vs-id">
+            <div class="documentation-section-title"><h4>Class vs ID:</h4></div>
+            <p class="documentation-description">
+                Classes and IDs are attributes used to target HTML elements with CSS.</p>
+                <ul>
+                    <li class="documentation-description"><b>Class:</b> Can be used on multiple elements. Use a dot (.) in CSS to select elements with a specific class.</li>
+                    <li class="documentation-description"><b>ID:</b> Should be unique to a single element per page. Use a hash (#) in CSS to select an element with a specific ID.</li>
+                </ul>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">&lt;div class="box"&gt;</p><p class="documentation-text">I am a box with a class.</p><p class="documentation-tag">&lt;/div&gt;</p>
+                <br>
+                <p class="documentation-tag">&lt;p id="intro"&gt;</p><p class="documentation-text">I am a paragraph with an ID.</p><p class="documentation-tag">&lt;/p&gt;</p>
+                <br>
+                <br>
+                <p class="documentation-comment">/* CSS */</p>
+                <p class="documentation-tag">.box {</p><br>
+                <p class="documentation-text documentation-left1">color: white;</p><br>
+                <p class="documentation-tag">}</p>
+                <BR><BR>
+                <p class="documentation-tag">#intro {</p><br>
+                <p class="documentation-text documentation-left1">font-weight: bold;</p><br>
+                <p class="documentation-tag">}</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="css-box-model">
+            <div class="documentation-section-title"><h4>Box Model:</h4></div>
+            <p class="documentation-description">The CSS box model is a container that surrounds every HTML element. It consists of: content, padding, border, and margin.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">/* CSS Example */</p>
+                <p class="documentation-tag">.element {</p><br>
+                <p class="documentation-text documentation-left1">width: 300px;</p><br>
+                <p class="documentation-text documentation-left1">padding: 20px;</p><br>
+                <p class="documentation-text documentation-left1">border: 5px solid red;</p><br>
+                <p class="documentation-text documentation-left1">margin: 10px;</p><br>
+                <p class="documentation-tag">}</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="css-margin">
+            <div class="documentation-section-title"><h4>Margin:</h4></div>
+            <p class="documentation-description">Margin is the space outside the border of an element. It's used to create space between elements.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">/* CSS Example */</p>
+                <p class="documentation-tag">.element {</p><br>
+                <p class="documentation-text documentation-left1">margin-top: 10px;</p><br>
+                <p class="documentation-text documentation-left1">margin-right: 20px;</p><br>
+                <p class="documentation-text documentation-left1">margin-bottom: 15px;</p><br>
+                <p class="documentation-text documentation-left1">margin-left: 5px;</p><br>
+                <p class="documentation-tag">}</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="css-padding">
+            <div class="documentation-section-title"><h4>Padding:</h4></div>
+            <p class="documentation-description">Padding is the space inside the border of an element, between the border and the content.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">/* CSS Example */</p>
+                <p class="documentation-tag">.element {</p><br>
+                <p class="documentation-text documentation-left1">padding-top: 10px;</p><br>
+                <p class="documentation-text documentation-left1">padding-right: 20px;</p><br>
+                <p class="documentation-text documentation-left1">padding-bottom: 15px;</p><br>
+                <p class="documentation-text documentation-left1">padding-left: 5px;</p><br>
+                <p class="documentation-tag">}</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="css-border">
+            <div class="documentation-section-title"><h4>Border:</h4></div>
+            <p class="documentation-description">The border property sets the border of an HTML element. You can specify the style, width, and color of the border.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">/* CSS Example */</p>
+                <p class="documentation-tag">.element {</p><br>
+                <p class="documentation-text documentation-left1">border-style: solid;</p><br>
+                <p class="documentation-text documentation-left1">border-width: 2px;</p><br>
+                <p class="documentation-text documentation-left1">border-color: black;</p><br>
+                <p class="documentation-tag">}</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="css-content">
+            <div class="documentation-section-title"><h4>Content:</h4></div>
+            <p class="documentation-description">The content is the actual text, images, and other media inside the HTML element. The size of the content area can be affected by properties like width and height.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">/* CSS Example */</p>
+                <p class="documentation-tag">.element {</p><br>
+                <p class="documentation-text documentation-left1">width: 200px;</p><br>
+                <p class="documentation-text documentation-left1">height: 100px;</p><br>
+                <p class="documentation-text documentation-left1">background-color: lightblue;</p><br>
+                <p class="documentation-text documentation-left1">text-align: center;</p><br>
+                <p class="documentation-tag">}</p>
+                <br><br>
+                <p class="documentation-tag">&lt;div class="element"&gt;</p><p class="documentation-text">My Content</p><p class="documentation-tag">&lt;/div&gt;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="css-background">
+            <div class="documentation-section-title"><h4>Background:</h4></div>
+            <p class="documentation-description">The background property is used to set the background effects for an element, such as color or image.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">/* CSS Example */</p>
+                <p class="documentation-tag">.element {</p><br>
+                <p class="documentation-text documentation-left1">background-color: #ffffff;</p><br>
+                <p class="documentation-text documentation-left1">background-image: url('image.png');</p><br>
+                <p class="documentation-tag">}</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="css-flexbox">
+            <div class="documentation-section-title"><h4>Flexbox:</h4></div>
+            <p class="documentation-description">CSS Flexbox is a layout module that makes it easier to design flexible and efficient layouts, especially for one-dimensional content arrangement (in rows or columns).</p>
+            <div class="documentation-code-example">  
+                <p class="documentation-comment">/* CSS for a flex container */</p>
+                <p class="documentation-tag">.container {</p><br>
+                <p class="documentation-text documentation-left1">display: flex;</p><br>
+                <p class="documentation-text documentation-left1">flex-direction: row; /* or column */</p><br>
+                <p class="documentation-text documentation-left1">justify-content: center; /* Align items along the main axis */</p><br>
+                <p class="documentation-text documentation-left1">align-items: center; /* Align items along the cross axis */</p><br>
+                <p class="documentation-tag">}</p><br>
+            </div>
+        </article>
+        <br><br>
     </section>
 </main>
 
 
 <footer id="footer">
-    <div id="footer-navigation"> <!--To allow all of the items to be moved at once-->
+    <div id="footer-navigation">
         <a href="index.html" class="footer-nav-link">Home Page</a>
         <a href="/documentation/html.html" class="footer-nav-link">HTML Page</a>
         <a href="/documentation/css.html" class="footer-nav-link">CSS Page</a>
