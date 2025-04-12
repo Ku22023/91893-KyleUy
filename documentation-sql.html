@@ -110,8 +110,8 @@
                 <p class="documentation-comment">--Create a table named 'Subjects'</p>
                 <p class="documentation-tag">CREATE TABLE Subjects (</p>
                 <div class="documentation-left1">
-                    <p class="documentation-tag">CourseID INT PRIMARY KEY,</p>
-                    <p class="documentation-tag">CourseName VARCHAR(255) NOT NULL,</p>
+                    <p class="documentation-tag">SubjectID INT PRIMARY KEY,</p>
+                    <p class="documentation-tag">Subj       ectName VARCHAR(255) NOT NULL,</p>
                     <p class="documentation-tag">Credits INT</p>
                 </div>
                 <p class="documentation-tag">);</p>
@@ -126,8 +126,8 @@
                 <p class="documentation-tag">INSERT INTO Students (StudentID, Name, Subject)</p>
                 <p class="documentation-tag">VALUES (22186, 'Jacky Mo', 'DTP');</p>
                 <br>
-                <p class="documentation-comment">--Add a new course to the 'Subjects' table, specifying only some columns</p>
-                <p class="documentation-tag">INSERT INTO Courses (SubjectName, Credits)</p>
+                <p class="documentation-comment">--Add a new subject to the 'Subjects' table, specifying only some columns</p>
+                <p class="documentation-tag">INSERT INTO SUBJECTS (SubjectName, Credits)</p>
                 <p class="documentation-tag">VALUES ('12DTP', 22);</p>
             </div>
         </article>
@@ -140,7 +140,7 @@
                 <p class="documentation-tag">SELECT * FROM Students WHERE level = '2';</p>
                 <br>
                 <p class="documentation-comment">--Select subjects with more than 3 credits</p>
-                <p class="documentation-tag">SELECT SubjectName FROM Courses WHERE Credits > 3;</p>
+                <p class="documentation-tag">SELECT SubjectName FROM Subjects WHERE Credits > 3;</p>
             </div>
         </article>
 
@@ -151,8 +151,8 @@
                 <p class="documentation-comment">--Update the level of the student named 'Jacky Mo'</p>
                 <p class="documentation-tag">UPDATE Students SET LEVEL = '3' WHERE Name = 'Jacky Mo';</p>
                 <br>
-                <p class="documentation-comment">--Update the credits of a course with a specific ID</p>
-                <p class="documentation-tag">UPDATE Courses SET Credits = 4 WHERE CourseID = 205;</p>
+                <p class="documentation-comment">--Update the credits of a subject with a specific ID</p>
+                <p class="documentation-tag">UPDATE Subjects SET Credits = 4 WHERE SubjectID = 205;</p>
             </div>
         </article>
 
@@ -175,8 +175,8 @@
                 <p class="documentation-comment">--Select all students and sort them by Name alphabetically</p>
                 <p class="documentation-tag">SELECT * FROM Students ORDER BY Name;</p>
                 <br>
-                <p class="documentation-comment">--Select all courses and sort them by Credits in descending order</p>
-                <p class="documentation-tag">SELECT * FROM Courses ORDER BY Credits DESC;</p>
+                <p class="documentation-comment">--Select all subjects and sort them by Credits in descending order</p>
+                <p class="documentation-tag">SELECT * FROM SUBJECTS ORDER BY Credits DESC;</p>
             </div>
         </article>
 
@@ -189,18 +189,19 @@
                 <p class="documentation-tag">FROM Students</p>
                 <p class="documentation-tag">INNER JOIN Enrollments ON Students.StudentID = Enrollments.StudentID;</p>
                 <br><br>
-                <p class="documentation-comment">--LEFT JOIN: Returns all students and any courses they are enrolled in (if any)</p>
-                <p class="documentation-tag">SELECT Students.Name, Enrollments.CourseID</p>
+                <p class="documentation-comment">--LEFT JOIN: Returns all students and any subjects they are enrolled in (if any)</p>
+                <p class="documentation-tag">SELECT Students.Name, Enrollments.SubjectID</p>
                 <p class="documentation-tag">FROM Students</p>
                 <p class="documentation-tag">LEFT JOIN Enrollments ON Students.StudentID = Enrollments.StudentID;</p>
             </div>
+        </article>
 
 
         <article class="documentation-language" id="sql-keys">
             <div class="documentation-section-title"><h4>Keys:</h4></div>
             <p class="documentation-description">SQL keys are constraints that ensure data integrity and establish relationships between tables. Common types include:</p>
             <div class="documentation-code-example">
-                <p class="documentation-tag">PRIMARY KEY</p><p class="documentation-comment-inline">--Uniquely identifies each record in a table (e.g., StudentID in Students, CourseID in Courses).</p>
+                <p class="documentation-tag">PRIMARY KEY</p><p class="documentation-comment-inline">--Uniquely identifies each record in a table (e.g., StudentID in Students, SubjectID in Subjects).</p>
                 <br><br>
                 <p class="documentation-tag">FOREIGN KEY</p><p class="documentation-comment-inline">--A field in one table that refers to the PRIMARY KEY in another (e.g., StudentID in an 'Enrollments' table referencing StudentID in 'Students').</p>
                 <br><br>
@@ -213,7 +214,6 @@
 
 
             <br><br>
-        </article>
 
     </section>
 </main>
