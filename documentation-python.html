@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="LeCodio Python Documentation Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, SQL, Python, web development, coding tutorials, LeCodio">
+    <title>LeCodio - Python Documentation</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+<header>
+    <nav id="nav1">
+        <a href="index.html" id="logo"><img src="/images/LeCodio_Logo.jpg" alt="Website Logo. The word 'Lecodio' Half surrounded by a box."></a>
+        <div id="nav-languages-buttons"> <div class="dropdown"> <a href="/documentation/html" class="language">HTML</a> <div class="dropdown-content"> <a href="/documentation/html/intro">What is HTML?</a>
+                    <a href="">Headers</a>
+                    <a href="">H1, H2, H3, H4</a>
+                    <a href="">p tags</a>
+                    <a href="">Divs</a>
+                    <a href="">Lists</a>
+                    <a href="">Formatting</a>
+                    <a href="">Styles</a>
+                    <a href="">Link to CSS</a>
+                </div>
+            </div>
+            <div class="dropdown"> <a href="/documentation/css" class="language">CSS</a> <div class="dropdown-content"> <a href="/documentation/css/intro">What is CSS?</a>
+                    <a href="">Selectors</a>
+                    <a href="">Class vs ID</a>
+                    <a href="">Box Model</a>
+                    <a href="">Margin</a>
+                    <a href="">Padding</a>
+                    <a href="">Border</a>
+                    <a href="">Content</a>
+                    <a href="">Background</a>
+                    <a href="">Flex Box</a>
+                </div>
+            </div>
+            <div class="dropdown"> <a href="/documentation/sql" class="language">SQL</a> <div class="dropdown-content"> <a href="/documentation/sql/intro">What is SQL?</a>
+                    <a href="">SELECT</a>
+                    <a href="">CREATE</a>
+                    <a href="">DELETE</a>
+                    <a href="">INSERT</a>
+                    <a href="">SORT</a>
+                    <a href="">Keys</a>
+                    <a href="">Joins</a>
+                    <a href="">ORDER BY</a>
+                </div>
+            </div>
+            <div class="dropdown"> <a href="/documentation/python" class="language">Python</a> <div class="dropdown-content"> <a href="/documentation/python/intro">What is Python?</a>
+                    <a href="">Print</a>
+                    <a href="">Input</a>
+                    <a href="">Variables</a>
+                    <a href="">Data Types</a>
+                    <a href="">If/Else Statements</a>
+                    <a href="">Loops</a>
+                    <a href="">For Loops</a>
+                    <a href="">While Loops</a>
+                    <a href="">Lists</a>
+                    <a href="">Functions</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="" class="language">NCEA</a>
+                <div class="dropdown-content">
+                    <a href="">Ncea Overview</a>
+                    <a href="">Level 1</a>
+                    <a href="">Level 2</a>
+                    <a href="">Level 3</a>
+                </div>
+            </div>
+        </div>
+        <a href="about-us.html" id="aboutus">About Us</a>
+    </nav>
+</header>
+
+<main id="documentation-template">
+        <div id="documentation-sidebar-background"> <aside id="documentation-sidebar">
+                <a href="#documentation-language-info" class="documentation-title documentation-sidebar-element">Python</a>
+                <a href="#what-is-python" class="documentation-sidebar-element">What is Python?</a>
+                <a href="#python-print" class="documentation-sidebar-element">Print</a>
+                <a href="#python-input" class="documentation-sidebar-element">Input</a>
+                <a href="#python-variables" class="documentation-sidebar-element">Variables</a>
+                <a href="#python-datatypes" class="documentation-sidebar-element">Data Types</a>
+                <a href="#python-if-else" class="documentation-sidebar-element">If/Else Statements</a>
+                <a href="#python-loops" class="documentation-sidebar-element">Loops</a>
+                <a href="#python-for-loops" class="documentation-sidebar-element">For Loops</a>
+                <a href="#python-while-loops" class="documentation-sidebar-element">While Loops</a>
+                <a href="#python-lists" class="documentation-sidebar-element">Lists</a>
+                <a href="#python-functions" class="documentation-sidebar-element">Functions</a>
+            </aside>
+        </div>
+
+    <section id="documentation-language-info"> <h2 class="documentation-language">Python Examples and Explainations</h2>
+        <article class="documentation-language" id="what-is-python">
+            <div class="documentation-section-title"><h4>What is Python?</h4></div>
+            <div class="documentation-description">Python is a popular and versatile programming language known for its readability and ease of use. It's used in web development, data science, artificial intelligence, and more.
+            </div>
+        </article>
+
+        <article class="documentation-language" id="python-print">
+            <div class="documentation-section-title"><h4>Print (Show Output):</h4></div>
+            <p class="documentation-description">The print() function is used to display output to the console.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">#Display the text "Hello world!"</p>
+                <p class="documentation-tag">print("Hello world!")</p>
+                <br><br>
+                <p class="documentation-comment">#Display the value of a variable</p>
+                <p class="documentation-tag">message = "hi"</p>
+                <p class="documentation-tag">print(message)</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="python-input">
+            <div class="documentation-section-title"><h4>Input (Get User Data):</h4></div>
+            <p class="documentation-description">The input() function allows you to get input from the user.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">#Get the user's name</p>
+                <p class="documentation-tag">name = input("Enter your name: ")</p>
+                <p class="documentation-tag">print(f"Hello, {name}")</p>
+                <br><br>
+                <p class="documentation-comment">#Get the user's age (input is always a string)</p>
+                <p class="documentation-tag">age_input = input("Enter your age: ")</p><br>
+                <p class="documentation-tag">age = int(age_input)</p><br>
+                <p class="documentation-tag">print(f"You are {age}, years old.")</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="python-variables">
+            <div class="documentation-section-title"><h4>Variables (Store Data):</h4></div>
+            <p class="documentation-description">Variables are used to store data values. You can assign different types of data to variables.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">name = "Taichi"</p><br>
+                <p class="documentation-tag">age = 30</p><br>
+                <p class="documentation-tag">price = 99.99</p><br>
+                <p class="documentation-tag">is_student = False</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="python-datatypes">
+            <div class="documentation-section-title"><h4>Data Types:</h4></div>
+            <p class="documentation-description">Python has several built-in data types, including:</p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">#String (text)</p><br>
+                <p class="documentation-tag">message = "Hello"</p>
+                <br><br>
+                <p class="documentation-tag">#Integer (whole numbers)</p><br>
+                <p class="documentation-tag">count = 10</p>
+                <br><br>
+                <p class="documentation-tag">#Float (decimal numbers)</p><br>
+                <p class="documentation-tag">pi = 3.14159</p>
+                <br><br>
+                <p class="documentation-tag">#Boolean (True or False)</p><br>
+                <p class="documentation-tag">is_valid = True</p>
+                <br><br>
+                <p class="documentation-tag">#List (ordered collection)</p><br>
+                <p class="documentation-tag">fruits = ['apple', 'banana', 'kiwifruit']</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="python-if-else">
+            <div class="documentation-section-title"><h4>If/Else Statements (Make Decisions):</h4></div>
+            <p class="documentation-description">if, elif (else if), and else statements are used to execute different blocks of code based on conditions.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">age = 20</p>
+                <p class="documentation-tag">if age >= 18:</p><br>
+                <p class="documentation-text documentation-left1">print("You are an adult.")</p><br>
+                <p class="documentation-tag">else:</p><br>
+                <p class="documentation-text documentation-left1">print("You are not yet an adult.")</p><br>
+                <br><br>
+                <p class="documentation-tag">score = 75</p><br>
+                <p class="documentation-tag">if score >= 90:</p><br>
+                <p class="documentation-text documentation-left1">grade = "A"</p><br>
+                <p class="documentation-tag">elif score >= 80:</p><br>
+                <p class="documentation-text documentation-left1">grade = "B"</p><br>
+                <p class="documentation-tag">else:</p><br>
+                <p class="documentation-text documentation-left1">grade = "C"</p><br>
+                <p class="documentation-tag">print(f"Your grade is: {grade}")</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="python-loops">
+            <div class="documentation-section-title"><h4>Loops (Repeat Actions):</h4></div>
+            <p class="documentation-description">Loops allow you to execute a block of code multiple times.</p>
+        </article>
+
+        <article class="documentation-language" id="python-for-loops">
+            <div class="documentation-section-title"><h4>For Loops:</h4></div>
+            <p class="documentation-description">for loops are used to iterate over a sequence (like a list, tuple, or string) or other iterable objects.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">#Iterating over a list</p>
+                <p class="documentation-tag">fruits = ["apple", "banana", "cherry"]</p><br>
+                <p class="documentation-tag">for item in fruits:</p><br>
+                <p class="documentation-text documentation-left1">print(item)</p>
+                <br><br>
+                <p class="documentation-comment">#Using range() to iterate a specific number of times</p>
+                <p class="documentation-tag">for i in range(3): #Generates numbers 0, 1, 2</p><br>
+                <p class="documentation-text documentation-left1">print(f"Number: {i}")</p>
+                <br><br>
+                <p class="documentation-comment">#Iterating over a string</p>
+                <p class="documentation-tag">message = "Python"</p><br>
+                <p class="documentation-tag">for char in message:</p><br>
+                <p class="documentation-text documentation-left1">print(char)</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="python-while-loops">
+            <div class="documentation-section-title"><h4>While Loops:</h4></div>
+            <p class="documentation-description">while loops continue to execute a block of code as long as a specified condition remains true. Be careful to avoid infinite loops!</p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">count = 0</p><br>
+                <p class="documentation-tag">while count < 5:</p><br>
+                <p class="documentation-text documentation-left1">print(f"Count is: {count}")</p><br>
+                <p class="documentation-text documentation-left1">count += 1 #Important: Increase the counter to eventually exit the loop</p><br>
+                <br><br>
+                <p class="documentation-comment">#Using a boolean flag to control the loop</p><br>
+                <p class="documentation-tag">running = True</p><br>
+                <p class="documentation-tag">while running:</p><br>
+                <p class="documentation-text documentation-left1">user_input = input("Type 'stop' to exit: ")</p><br>
+                <p class="documentation-text documentation-left1">if user_input == "stop":</p><br>
+                <p class="documentation-text documentation-left2">running = False</p><br>
+                <p class="documentation-text documentation-left1">else:</p><br>
+                <p class="documentation-text documentation-left2">print(f"You typed: {user_input}")</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="python-lists">
+            <div class="documentation-section-title"><h4>Lists (Ordered Collections):</h4></div>
+            <p class="documentation-description">Lists are ordered, changeable collections of items. They are defined using square brackets [].</p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">my_list = [10, "hello", 3.14, True]</p><br>
+                <br><br>
+                <p class="documentation-comment">#Modifying items</p><br>
+                <p class="documentation-tag">my_list[0] = 20</p><br>
+                <p class="documentation-tag">print(my_list)</p><p class="documentation-comment"> # Output: [20, "hello", 3.14, True]</p><br>
+                <p class="documentation-comment">#Adding items</p>
+                <p class="documentation-tag">my_list.append("world")</p><br>
+                <p class="documentation-tag">print(my_list)</p><p class="documentation-comment"> #Output: [20, "hello", 3.14, True, "world"]</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="python-functions">
+            <div class="documentation-section-title"><h4>Functions (Reusable Code):</h4></div>
+            <p class="documentation-description">Functions are blocks of reusable code that perform a specific task. You can define your own functions.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">#Define a function that greets a person</p>
+                <p class="documentation-tag">def greet(name):</p><br>
+                <p class="documentation-text documentation-left1">print(f"Hello, {name}")</p><br><br>
+                <p class="documentation-comment">#Call the function</p>
+                <p class="documentation-tag">greet("Charlie")</p>
+                <br><br>
+                <p class="documentation-comment">#Define a function that adds two numbers and returns the result</p>
+                <p class="documentation-tag">def add(x, y):</p><br>
+                <p class="documentation-text documentation-left1">return x + y</p>
+                <br>
+                <p class="documentation-tag">result = add(5, 3)</p><br>
+                <p class="documentation-tag">print(f"The sum is: {result}")</p>
+            </div>
+        </article>
+        <br><br>
+    </section>
+</main>
+
+
+<footer id="footer">
+    <div id="footer-navigation">
+        <a href="index.html" class="footer-nav-link">Home Page</a>
+        <a href="/documentation/html.html" class="footer-nav-link">HTML Page</a>
+        <a href="/documentation/css.html" class="footer-nav-link">CSS Page</a>
+        <a href="/documentation/sql.html" class="footer-nav-link">SQL Page</a>
+        <a href="/documentation/python.html" class="footer-nav-link">Python Page</a>
+        <a href="ncea.html" class="footer-nav-link">NCEA Page</a>
+        <a href="about-us.html" class="footer-nav-link">About Us</a>
+    </div>
+    <div id="footer-email">
+        <p id="email">Email: ku22023@my.westlake.school.nz</p>
+    </div>
+    <div id="footer-copyright">
+        <p>Copyright ©2025.</p>
+    </div>
+
+</footer>
+
+</body>
+
+</html>
