@@ -513,11 +513,6 @@ nav a {
     margin-bottom: 240px;
 }
 
-#about-us-gallery a{
-    color: black;
-    text-decoration: none;
-}
-
 #about-us-gallery:hover {
     text-decoration: underline;
     border-style: solid;
@@ -541,10 +536,12 @@ nav a {
     background-image: url(images/ncea-background.png);
     width: 700px;
     height: 200px;
+    color: black;
 }
 
-
-
+#about-us-gallery-wrap a {
+    text-decoration: none;
+}
 
 
 
