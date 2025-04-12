@@ -510,7 +510,7 @@ nav a {
 #about-us-page {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    margin-bottom: 450px;
+    margin-bottom: 240px;
 }
 
 #about-us-gallery a{
@@ -518,11 +518,30 @@ nav a {
     text-decoration: none;
 }
 
-#about-us-gallery a:hover {
+#about-us-gallery:hover {
     text-decoration: underline;
+    border-style: solid;
 }
 
+#about-us-gallery-wrap {
+    display: flex;
+    justify-content: center;
+}
 
+#about-us-gallery:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#about-us-gallery {
+    display: flex;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/ncea-background.png);
+    width: 700px;
+    height: 200px;
+}
 
 
 
