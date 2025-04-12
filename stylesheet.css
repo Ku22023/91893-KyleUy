@@ -70,6 +70,7 @@ nav a {
 
 .dropdown-content a:hover { /* To show the dropdown menu when the user is hovering over it*/
     background-color: rgb(168, 178, 180);
+    transition: 0.5s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -273,7 +274,6 @@ nav a {
 }
 
 #ncea-level-1 {
-
     background-image: url(/images/level-1-bg.jpg);
 }
 
@@ -336,10 +336,14 @@ nav a {
     margin-top: 0px;
     padding-top: 0px;
     align-items: center;
+    transition: 1s;
 }
 
 .documentation-sidebar-element:hover {
-    background-color: #09a5ba;
+    background-color: #044E58;
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: 1s;
 }
 
 
@@ -376,12 +380,18 @@ nav a {
     font-family: "Fira Code", monospace;  
     width: 800px;
     height: 100px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #cbe0e9;
     border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    transition: 1s;
 }
 
+.documentation-code-example:hover {
+    border-color: #cbe0e9;
+    transition: 1s;
+
+}
 
 
 
