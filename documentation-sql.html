@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="LeCodio SQL Documentation Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, SQL, Python, web development, coding tutorials, LeCodio">
+    <title>LeCodio - SQL Documentation</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+<header>
+    <nav id="nav1">
+        <a href="index.html" id="logo"><img src="/images/LeCodio_Logo.jpg" alt="Website Logo. The word 'Lecodio' Half surrounded by a box."></a>
+        <div id="nav-languages-buttons"> <div class="dropdown"> <a href="/documentation/html" class="language">HTML</a> <div class="dropdown-content"> <a href="/documentation/html/intro">What is HTML?</a>
+                    <a href="">Headers</a>
+                    <a href="">H1, H2, H3, H4</a>
+                    <a href="">p tags</a>
+                    <a href="">Divs</a>
+                    <a href="">Lists</a>
+                    <a href="">Formatting</a>
+                    <a href="">Styles</a>
+                    <a href="">Link to CSS</a>
+                </div>
+            </div>
+            <div class="dropdown"> <a href="/documentation/css" class="language">CSS</a> <div class="dropdown-content"> <a href="/documentation/css/intro">What is CSS?</a>
+                    <a href="">Selectors</a>
+                    <a href="">Class vs ID</a>
+                    <a href="">Box Model</a>
+                    <a href="">Margin</a>
+                    <a href="">Padding</a>
+                    <a href="">Border</a>
+                    <a href="">Content</a>
+                    <a href="">Background</a>
+                    <a href="">Flex Box</a>
+                </div>
+            </div>
+            <div class="dropdown"> <a href="/documentation/sql" class="language">SQL</a> <div class="dropdown-content"> <a href="/documentation/sql/intro">What is SQL?</a>
+                    <a href="">SELECT</a>
+                    <a href="">CREATE</a>
+                    <a href="">DELETE</a>
+                    <a href="">INSERT</a>
+                    <a href="">SORT</a>
+                    <a href="">Keys</a>
+                    <a href="">Joins</a>
+                    <a href="">ORDER BY</a>
+                </div>
+            </div>
+            <div class="dropdown"> <a href="" class="language">Python</a> <div class="dropdown-content"> <a href="">What is Python?</a>
+                    <a href="">Print</a>
+                    <a href="">Input</a>
+                    <a href="">Variables</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="" class="language">NCEA</a>
+                <div class="dropdown-content">
+                    <a href="">Ncea Overview</a>
+                    <a href="">Level 1</a>
+                    <a href="">Level 2</a>
+                    <a href="">Level 3</a>
+                </div>
+            </div>
+        </div>
+        <a href="about-us.html" id="aboutus">About Us</a>
+    </nav>
+</header>
+
+<main id="documentation-template">
+        <div id="documentation-sidebar-background"> <aside id="documentation-sidebar">
+                <a href="#documentation-language-info" class="documentation-title documentation-sidebar-element">SQL</a>
+                <a href="#what-is-sql" class="documentation-sidebar-element">What is SQL?</a>
+                <a href="#sql-select" class="documentation-sidebar-element">SELECT</a>
+                <a href="#sql-create-table" class="documentation-sidebar-element">CREATE TABLE</a>
+                <a href="#sql-insert-into" class="documentation-sidebar-element">INSERT INTO</a>
+                <a href="#sql-where" class="documentation-sidebar-element">WHERE</a>
+                <a href="#sql-update" class="documentation-sidebar-element">UPDATE</a>
+                <a href="#sql-delete-from" class="documentation-sidebar-element">DELETE FROM</a>
+                <a href="#sql-orderby" class="documentation-sidebar-element">ORDER BY</a>
+                <a href="#sql-joins" class="documentation-sidebar-element">Joins</a>
+                <a href="#sql-keys" class="documentation-sidebar-element">Keys</a>
+            </aside>
+        </div>
+
+    <section id="documentation-language-info"> <h2 class="documentation-language">SQL Examples and Explained</h2>
+        <article class="documentation-language" id="what-is-sql">
+            <div class="documentation-section-title"><h4>What is SQL?</h4></div>
+            <div class="documentation-description">SQL (Structured Query Language) is the standard language for interacting with databases. You use it to ask questions (queries) and make changes to the information stored within.
+            </div>
+        </article>
+
+        <article class="documentation-language" id="sql-select">
+            <div class="documentation-section-title"><h4>SELECT (Retrieve Data):</h4></div>
+            <p class="documentation-description">The SELECT command is your primary tool for getting information out of a database table.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">--Get all information from the 'Students' table</p>
+                <p class="documentation-tag">SELECT * FROM Students;</p>
+                <br>
+                <p class="documentation-comment">--Get only the 'Name' and 'Major' columns from the 'Students' table</p>
+                <p class="documentation-tag">SELECT Name, Major FROM Students;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="sql-create-table">
+            <div class="documentation-section-title"><h4>CREATE TABLE (Make Tables):</h4></div>
+            <p class="documentation-description">The CREATE TABLE command is used to define a new table in your database, specifying the names and types of the columns it will contain.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">--Create a table named 'Subjects'</p>
+                <p class="documentation-tag">CREATE TABLE Subjects (</p>
+                <div class="documentation-left1">
+                    <p class="documentation-tag">CourseID INT PRIMARY KEY,</p>
+                    <p class="documentation-tag">CourseName VARCHAR(255) NOT NULL,</p>
+                    <p class="documentation-tag">Credits INT</p>
+                </div>
+                <p class="documentation-tag">);</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="sql-insert-into">
+            <div class="documentation-section-title"><h4>INSERT INTO (Add Data):</h4></div>
+            <p class="documentation-description">The INSERT INTO command lets you add new rows of data into an existing table.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">--Add a new student to the 'Students' table</p>
+                <p class="documentation-tag">INSERT INTO Students (StudentID, Name, Subject)</p>
+                <p class="documentation-tag">VALUES (22186, 'Jacky Mo', 'DTP');</p>
+                <br>
+                <p class="documentation-comment">--Add a new course to the 'Subjects' table, specifying only some columns</p>
+                <p class="documentation-tag">INSERT INTO Courses (SubjectName, Credits)</p>
+                <p class="documentation-tag">VALUES ('12DTP', 22);</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="sql-where">
+            <div class="documentation-section-title"><h4>WHERE (Filter Data):</h4></div>
+            <p class="documentation-description">The WHERE clause is used to filter records, allowing you to retrieve only the data that meets specific conditions.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">--Select all students who are in level 2</p>
+                <p class="documentation-tag">SELECT * FROM Students WHERE level = '2';</p>
+                <br>
+                <p class="documentation-comment">--Select subjects with more than 3 credits</p>
+                <p class="documentation-tag">SELECT SubjectName FROM Courses WHERE Credits > 3;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="sql-update">
+            <div class="documentation-section-title"><h4>UPDATE (Change Data):</h4></div>
+            <p class="documentation-description">The UPDATE command allows you to modify existing records in a table.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">--Update the level of the student named 'Jacky Mo'</p>
+                <p class="documentation-tag">UPDATE Students SET LEVEL = '3' WHERE Name = 'Jacky Mo';</p>
+                <br>
+                <p class="documentation-comment">--Update the credits of a course with a specific ID</p>
+                <p class="documentation-tag">UPDATE Courses SET Credits = 4 WHERE CourseID = 205;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="sql-delete-from">
+            <div class="documentation-section-title"><h4>DELETE FROM (Remove Data):</h4></div>
+            <p class="documentation-description">The DELETE FROM command is used to remove existing records from a table based on a specified condition.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">--Delete the student with the ID 22023</p>
+                <p class="documentation-tag">DELETE FROM Students WHERE StudentID = 22023;</p>
+                <br>
+                <p class="documentation-comment">--Delete all records from the 'Enrollments' table (use with caution!)</p>
+                <p class="documentation-tag">DELETE FROM Enrollments;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="sql-orderby">
+            <div class="documentation-section-title"><h4>ORDER BY (Sort Results):</h4></div>
+            <p class="documentation-description">The ORDER BY clause is used to sort the result-set of a `SELECT` statement. You can sort the records in ascending (`ASC`) or descending (`DESC`) order.</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">--Select all students and sort them by Name alphabetically</p>
+                <p class="documentation-tag">SELECT * FROM Students ORDER BY Name;</p>
+                <br>
+                <p class="documentation-comment">--Select all courses and sort them by Credits in descending order</p>
+                <p class="documentation-tag">SELECT * FROM Courses ORDER BY Credits DESC;</p>
+            </div>
+        </article>
+
+        <article class="documentation-language" id="sql-joins">
+            <div class="documentation-section-title"><h4>Joins (Combine Tables):</h4></div>
+            <p class="documentation-description">JOIN clauses are used to combine rows from two or more tables based on a related column between them. Common types include:</p>
+            <div class="documentation-code-example">
+                <p class="documentation-comment">--INNER JOIN: Returns records that have matching values in both 'Students' and 'Enrollments' tables</p>
+                <p class="documentation-tag">SELECT Students.Name, Enrollments.SubjectID</p>
+                <p class="documentation-tag">FROM Students</p>
+                <p class="documentation-tag">INNER JOIN Enrollments ON Students.StudentID = Enrollments.StudentID;</p>
+                <br><br>
+                <p class="documentation-comment">--LEFT JOIN: Returns all students and any courses they are enrolled in (if any)</p>
+                <p class="documentation-tag">SELECT Students.Name, Enrollments.CourseID</p>
+                <p class="documentation-tag">FROM Students</p>
+                <p class="documentation-tag">LEFT JOIN Enrollments ON Students.StudentID = Enrollments.StudentID;</p>
+            </div>
+
+
+        <article class="documentation-language" id="sql-keys">
+            <div class="documentation-section-title"><h4>Keys:</h4></div>
+            <p class="documentation-description">SQL keys are constraints that ensure data integrity and establish relationships between tables. Common types include:</p>
+            <div class="documentation-code-example">
+                <p class="documentation-tag">PRIMARY KEY</p><p class="documentation-comment-inline">--Uniquely identifies each record in a table (e.g., StudentID in Students, CourseID in Courses).</p>
+                <br><br>
+                <p class="documentation-tag">FOREIGN KEY</p><p class="documentation-comment-inline">--A field in one table that refers to the PRIMARY KEY in another (e.g., StudentID in an 'Enrollments' table referencing StudentID in 'Students').</p>
+                <br><br>
+                <p class="documentation-tag">UNIQUE</p><p class="documentation-comment-inline">--Ensures that all values in a column are different (e.g., a unique student email address).</p>
+                <br><br>
+                <p class="documentation-tag">NOT NULL</p><p class="documentation-comment-inline">--Ensures that a column cannot have a NULL value (e.g., a student's name must be provided).</p>
+            </div>
+        </article>
+
+
+
+            <br><br>
+        </article>
+
+    </section>
+</main>
+
+
+<footer id="footer">
+    <div id="footer-navigation">
+        <a href="index.html" class="footer-nav-link">Home Page</a>
+        <a href="/documentation/html.html" class="footer-nav-link">HTML Page</a>
+        <a href="/documentation/css.html" class="footer-nav-link">CSS Page</a>
+        <a href="/documentation/sql.html" class="footer-nav-link">SQL Page</a>
+        <a href="/documentation/python.html" class="footer-nav-link">Python Page</a>
+        <a href="ncea.html" class="footer-nav-link">NCEA Page</a>
+        <a href="about-us.html" class="footer-nav-link">About Us</a>
+    </div>
+    <div id="footer-email">
+        <p id="email">Email: ku22023@my.westlake.school.nz</p>
+    </div>
+    <div id="footer-copyright">
+        <p>Copyright ©2025.</p>
+    </div>
+
+</footer>
+
+</body>
+
+</html>
