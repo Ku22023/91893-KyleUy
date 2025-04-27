@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="LeCodio Home Page">
+    <meta charset="UTF-8"> 
+    <meta name="description" content="LeCodio Home Page"> <!--To describe the page to search engines-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, SQL, Python, web development, coding tutorials, LeCodio">
     <title>LeCodio - Homepage</title>
@@ -12,9 +12,9 @@
 <body>
     <header>
         <nav id="nav1">
-            <a href="index.html" id="logo"><img src="/images/LeCodio_Logo.jpg" alt="Website Logo. The word 'Lecodio' Half surrounded by a box."></a>
-            <div id="nav-languages-buttons"> <div class="dropdown"> <a href="documentation-html.html" class="language">HTML</a> 
-                <div class="dropdown-content">
+            <a href="index.html" id="logo"><img src="/images/LeCodio_Logo.jpg" alt="Website Logo. The word 'Lecodio' Half surrounded by a box."></a> <!--Make a Logo-->
+            <div id="nav-languages-buttons"> <div class="dropdown"> <a href="documentation-html.html" class="language">HTML</a>  <!--Div is used to keep the buttons on the left side, seperate from the about us button-->
+                <div class="dropdown-content"> <!--Used to used the dropdown until hovered on-->
                         <a href="documentation-html.html#what-is-html">What is HTML?</a>
                         <a href="documentation-html.html#basic-structure">Basic Structure</a>
                         <a href="documentation-html.html#html-headings">Headings</a>
@@ -27,8 +27,8 @@
                         <a href="documentation-html.html#html-meta-data">Metadata</a>
                     </div>
                 </div>
-                <div class="dropdown"> <a href="documentation-css.html" class="language">CSS</a> 
-                    <div class="dropdown-content"> 
+                <div class="dropdown"> <a href="documentation-css.html" class="language">CSS</a>  <!--Div is used to keep the buttons on the left side, seperate from the about us button-->
+                    <div class="dropdown-content">  <!--Used to used the dropdown until hovered on-->
                         <a href="documentation-css.html#what-is-css">What is CSS?</a>
                         <a href="documentation-css.html#css-selectors">Selectors</a>
                         <a href="documentation-css.html#css-class-vs-id">Class vs ID</a>
@@ -41,8 +41,8 @@
                         <a href="documentation-css.html#css-flexbox">Flex Box</a>
                     </div>
                 </div>
-                <div class="dropdown"> <a href="documentation-sql.html" class="language">SQL</a> 
-                    <div class="dropdown-content"> 
+                <div class="dropdown"> <a href="documentation-sql.html" class="language">SQL</a>  <!--Div is used to keep the buttons on the left side, seperate from the about us button-->
+                    <div class="dropdown-content">  <!--Used to used the dropdown until hovered on-->
                         <a href="documentation-sql.html#what-is-sql">What is SQL?</a>
                         <a href="documentation-sql.html#sql-select">SELECT</a>
                         <a href="documentation-sql.html#sql-create-table">CREATE TABLE</a>
@@ -54,8 +54,8 @@
                         <a href="documentation-sql.html#sql-keys">Keys</a>
                     </div>
                 </div>
-                <div class="dropdown"> <a href="documentation-python.html" class="language">Python</a>
-                     <div class="dropdown-content"> 
+                <div class="dropdown"> <a href="documentation-python.html" class="language">Python</a>  <!--Div is used to keep the buttons on the left side, seperate from the about us button-->
+                     <div class="dropdown-content">  <!--Used to used the dropdown until hovered on-->
                         <a href="documentation-python.html#what-is-python">What is Python?</a>
                         <a href="documentation-python.html#python-print">Print</a>
                         <a href="documentation-python.html#python-input">Input</a>
@@ -70,8 +70,8 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="ncea.html" class="language">NCEA</a>
-                    <div class="dropdown-content">
+                    <a href="ncea.html" class="language">NCEA</a>  <!--Div is used to keep the buttons on the left side, seperate from the about us button-->
+                    <div class="dropdown-content">  <!--Used to used the dropdown until hovered on-->
                         <a href="ncea.html">Ncea Overview</a>
                         <a href="ncea.html#ncea-page-level-1">Level 1</a>
                         <a href="ncea.html#ncea-page-level-2">Level 2</a>
@@ -84,49 +84,48 @@
     </header>
 
 <main id="index-main">
-    <div id="hero-image">
+    <div id="hero-image"> <!--Group the hero image and text together.-->
         <article id="hero-left-side">
-            <h2 id="hero-learn-to-use">Learn how to use...</h2> <!--Come back to this cuz idk how it works-->
-            <p id="hero-html">html</p>
+            <h2 id="hero-learn-to-use">Learn how to...</h2> 
+            <p id="hero-html">code</p> <!--Used to seperate the two lines and push the "code" word to the right-->
         </article>
         <article id="hero-right-side">
             <a id="get-started" href="documentation-html.html"><h4>Get Started ></h4></a>
         </article>
     </div>
 
-    <div id="select-language">
+    <div id="select-language"> <!--Seperate div to show that this is seperate form the hero image-->
         <article>
             <a href="documentation-html.html" class="index-language-buttons">
-                <h4 class="index-language-buttons-text">HTML</h4>
+                <h4 class="index-language-buttons-text">HTML</h4> <!--Leads to the language-->
             </a>
         </article>
         <article>
             <a href="documentation-css.html" class="index-language-buttons">
-                <h4 class="index-language-buttons-text">CSS</h4>
+                <h4 class="index-language-buttons-text">CSS</h4><!--Leads to the language-->
             </a>
         </article>
         <article>
             <a href="documentation-sql.html" class="index-language-buttons">
-                <h4 class="index-language-buttons-text">SQL</h4>
+                <h4 class="index-language-buttons-text">SQL</h4><!--Leads to the language-->
             </a>
         </article>
         <article>
             <a href="documentation-python.html" class="index-language-buttons">
-                <h4 class="index-language-buttons-text">Python</h4>
+                <h4 class="index-language-buttons-text">Python</h4><!--Leads to the language-->
             </a>
         </article>
-
     </div>
 
-    <div id="selection-below-buttons">
+    <div id="selection-below-buttons"> <!--Used a seperate div to seperate from the language buttons-->
         <div id="ncea-selection">
-            <article>
+            <article> <!--Article used to make the buttons seperate from each other-->
                 <a href="ncea.html" id="ncea-main-button">
-                    <h3 id="ncea-main-button-text">NCEA Program<br></h3>
+                    <h3 id="ncea-main-button-text">NCEA Program<br></h3> <!--Two tags used to have different sizes of text-->
                     <p id="ncea-main-button-learn-more">Learn More ></p>
                 </a>
             </article>
-            <article id="ncea-level-buttons-container">
+            <article id="ncea-level-buttons-container"> <!--Div inside -->
                 <a href="ncea.html#ncea-page-level-1" class="ncea-level-buttons" id="ncea-level-1">
                     <h4>Level 1</h4>
                 </a>
