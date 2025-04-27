@@ -6,6 +6,8 @@ body { /* Width is determined. */
     margin: 0 auto;
 }
 
+/* Header and navbar, used on all pages.*/
+
 nav {
     display: flex;
     align-items: center;
@@ -24,13 +26,13 @@ nav {
     text-decoration: none;
 }
 
-#logo {
+#logo { /* Seperates the logo from */
     width: 110px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.language {
+.language { /* Makes the language buttons seperate from the logo and the about us buttons*/
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
@@ -49,7 +51,6 @@ nav a {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 .dropdown-content { /* To hide the dropdown menu*/
     display: none;
@@ -75,14 +76,14 @@ nav a {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; /* To show the  */
 }
 
 .language:hover, #aboutus:hover {
     text-decoration: underline;
 }
 
-
+/* Index.HTML styling */
 
 
 #hero-image {
@@ -143,7 +144,7 @@ nav a {
 
 }
 
-#get-started:hover {
+#get-started:hover { /* Changes the size of the button when hovered*/
     transform: scale(1.2);
     transition: 1s;
     text-decoration: underline;
@@ -172,7 +173,7 @@ nav a {
     border-style: solid;
 }
 
-.index-language-buttons:hover {
+.index-language-buttons:hover { /* Changes the size of the button when hovered*/
     border-width: 3px;
     transform: translate(0, -10px);
     text-decoration: underline;
@@ -201,7 +202,6 @@ nav a {
     justify-content: center;
 
 }
-
 
 #ncea-selection {
     display: flex;
@@ -267,7 +267,7 @@ nav a {
     transition: 1s;
 }
 
-.ncea-level-buttons:hover {
+.ncea-level-buttons:hover { /* Changes the size of the button when hovered*/
     border-width: 3px;
     text-decoration: underline;
     transform: scale(1.1);
@@ -308,7 +308,7 @@ nav a {
 
 
 
-
+/* Shared CSS for the documentation pages */
 
 #documentation-template {
     display: flex;
@@ -319,9 +319,9 @@ nav a {
 }
 
 #documentation-sidebar {
-    z-index: 0;
-    position: sticky;
-    top: 0;
+    z-index: 0; /* Prevents the text from overlapping*/
+    position: sticky; /* Make the bar stay on screen always*/
+    top: 0; /* Keeps the side bar on the top of the screen even when scrolling*/
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -341,7 +341,7 @@ nav a {
     transition: 1s;
 }
 
-.documentation-sidebar-element:hover {
+.documentation-sidebar-element:hover { /* Changes the size of the button when hovered*/
     background-color: #044E58;
     text-decoration: underline;
     transform: scale(1.05);
@@ -394,7 +394,7 @@ nav a {
     transition: 1s;
 }
 
-.documentation-comment, .documentation-comment-inline{
+.documentation-comment, .documentation-comment-inline{ 
     color: #19cf19;
     margin: 0px;
     padding: 0px;
@@ -411,7 +411,7 @@ nav a {
     display: inline;
 }
 
-.documentation-code-example:hover {
+.documentation-code-example:hover { /* Changes the size of the button when hovered*/
     border-color: #cbe0e9;
     transition: 1s;
 
@@ -430,12 +430,12 @@ nav a {
     font-weight: bold;
 }
 
-.documentation-left1 {
+.documentation-left1 { /* Spacing to make code look like its been tabbed down oonce*/
     margin: 0px;
     margin-left: 30px;
 }
 
-.documentation-left2 {
+.documentation-left2 { /* Spacing to make code look like its been tabbed down twice*/
     margin: 0px;
     margin-left: 60px;
 }
@@ -443,6 +443,7 @@ nav a {
 
 
 
+/* NCEA Page */
 
 #ncea-hero-combined {
     display: flex;
@@ -547,7 +548,7 @@ nav a {
 
 
 
-
+/* About us Page */
 
 #about-us-page {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -587,7 +588,7 @@ nav a {
 
 
 
-
+/* Footer */
 
 #footer {
     background-color: #118282;
